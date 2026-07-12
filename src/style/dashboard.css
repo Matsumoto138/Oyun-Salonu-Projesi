@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Slab:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Chelsea Market", system-ui;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../assets/gaming-room-background.png");
+
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    /* From https://css.glass */
+    background: rgba(160, 160, 160, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(5px);
+    
+}
+
+header .navbar .menu{
+    
+}
+
+header .navbar .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+header .navbar .menu ul .menu-item{
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+header .navbar .menu ul .menu-item:hover{
+    color: #00a8ff;
+    scale: 1.1;
+    background: rgba(160, 160, 160, 0.2);
+}
+
+header .navbar .menu ul .menu-item a{
+    color: rgb(208, 208, 208);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 80%;
+    gap: 20px;
+}
+
+.main-container .container-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 30%;
+    background:white;
+    height: 100%;
+    border-radius: 30px;
+    box-shadow: 8px 10px 15px 0px rgba(14, 203, 255, 0.6);
+
+}
+
+.main-container .container-left img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #c9c9c9;
+    border-color: #bd5ce4; /* Mor renk */
+    box-shadow: 0 0 10px #c05be8, 0 0 20px #9b59b6, 0 0 30px #8e44ad;
+}
+
+.main-container .container-right{
+    width: 70%;
+    height: 100%;
+    background: white;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 8px 10px 15px 0px rgba(14, 203, 255, 0.6);
+}
+
+.main-container .container-right .game-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main-container .container-right .game-list .game-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: rgba(160, 160, 160, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-container .container-right .game-list .game-item p{
+    font-size: 20px;
+    font-family: "Chelsea Market", system-ui;
+    color: white;
+    text-shadow: 0 0 5px #b858dd, 0 0 10px #9b59b6, 0 0 15px #8e44ad;
+}
+
+.main-container .container-right .game-list .game-item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.main-container .container-right .game-list .game-item button{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 80%;
+    font-size: 24px;
+    font-family: "Chelsea Market", system-ui;
+}

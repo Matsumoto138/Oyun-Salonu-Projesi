@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Chelsea Market", system-ui;
+    background-color: #f0f0f0;
+}
+
+.main-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../assets/gaming-room-background.png");
+}
+
+
+
+.login-container{
+    width: 600px;
+    height: 550px;
+    padding: 40px 0;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 8px 10px 15px 0px rgba(14, 203, 255, 0.6);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login-container h1{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.login-container .avatar-selection-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container .avatar-selection-area .avatar-selection{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .avatar-selection-area .avatar-selection .avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.login-container .avatar-selection-area .avatar-selection img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #c9c9c9;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.login-container .avatar-selection-area .avatar-selection .avatar.selected img{
+    border-color: #bd5ce4; /* Mor renk */
+    box-shadow: 0 0 10px #c05be8, 0 0 20px #9b59b6, 0 0 30px #8e44ad;
+    transform: scale(1.05);
+}
+
+.login-input-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-input-area input{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 2px solid #c9c9c9;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-input-area input:focus{
+    outline: none;
+    border: 2px solid #0ECBFF;
+    box-shadow: 2px 1px 15px 0px rgba(14, 203, 255, 0.6);
+}
+
+.login-input-area select{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 2px solid #c9c9c9;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-input-area button{
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 32px;
+    background-color: #0eff1e;
+    color: white;
+    border: none;
+    text-shadow: 2px 4px #000000;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.login-input-area button:hover{
+    background-color: #0ecb1a;
+}
+
+.login-input-area .login-btn{
+    color: white;
+    text-decoration: none;
+}
