@@ -16,7 +16,7 @@ baslaButonu.addEventListener('click', (e)=>{
         const avatarSrc = selectedAvatar.getAttribute('src');
         const dosyaAdi = avatarSrc.split('/').pop();
         localStorage.setItem('selectedAvatar', dosyaAdi);
-        window.location.href = 'pages/dashboard.html';
+        window.location.href = 'src/pages/dashboard.html';
     } else {
         alert('Lütfen bir avatar seçin.');
     }
